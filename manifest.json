@@ -1,0 +1,20 @@
+{
+  "description": "Makes the search bar for maoridictionary.co.nz sticky while scrolling",
+  "manifest_version": 1,
+  "name": "Maori Dictionary Sticky Search",
+  "version": "0.1",
+  "homepage_url": "https://github.com/svillamonte/maori-dict-search",
+  
+  "icons": {
+    "48": "icons/maori_dict.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.maoridictionary.co.nz/search*"],
+      "css": ["style.css"],
+      "js": ["script.js"]
+    }
+  ]
+
+}
