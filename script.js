@@ -1,11 +1,11 @@
-const saraza = document.getElementById('hero');
-const sarazaOffset = saraza.offsetTop;
+const fixedClassname = 'fixed';
+const heroElement = document.getElementById('hero');
 
 document.addEventListener('scroll', function() {
-  if (window.scrollY > sarazaOffset) {
-    saraza.classList.add('fixed');
+  if (window.scrollY > heroElement.offsetTop) {
+    heroElement.classList.add(fixedClassname);
   }
   else {
-    saraza.classList.remove('fixed');
+    heroElement.classList.remove(fixedClassname);
   }
 });
